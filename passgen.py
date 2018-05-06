@@ -1,5 +1,4 @@
 import random
-import time
 
 def testStrength(newPassword, vectors, passwordLen):
     for vector in vectors:
@@ -34,5 +33,3 @@ try:
 except ValueError:
     print("Invalid length. Using default length of 8.\n")
     print("Your new password: %s" % passwordGen(8))
-
-time.sleep(10)
